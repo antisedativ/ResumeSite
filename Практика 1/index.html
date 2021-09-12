@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика №1</title>
+</head>
+
+<body>
+
+    <h1> Практика №1 </h1>
+
+    <div>
+        <!-- link -->
+        <h2> Ссылки </h2>
+        <ol>
+            <li>
+                <!-- 1 -->
+                <a href="http://127.0.0.1:5500/index.html">Гиперссылку на главную страницу</a>
+            </li>
+            <li>
+                <!-- 2 -->
+                <a href="https://127.0.0.1:5500/index.html"> Гиперссылку на главную страницу в протоколе https</a>
+            </li>
+            <li>
+                <!-- 3 -->
+                <a href="ftp://127.0.0.1:5500/index.html">ссылку на файл на сервере FTP без авторизации</a>
+            </li>
+            <li>
+                <!-- 4 -->
+                <a href="ftps://127.0.0.1:5500/index.html">ссылку на файл на сервере FTP с авторизацией</a>
+            </li>
+            <li>
+                <!-- 5 -->
+                <a href="https://www.kubsu.ru/ru/node/874">фрагмент страницы некоторого сайта</a>
+            </li>
+            <li>
+                <!-- 6 -->
+                <a href="#Biography">фрагмент текущей страницы</a>
+            </li>
+            <li>
+                <!-- 7 -->
+                <a href="http://127.0.0.1:5500/index.html/news/about">ссылку с двумя параметрами в URL</a>
+            </li>
+            <li>
+                <!-- 8 -->
+                <a href="https://127.0.0.1:5500/index.html" title="навигации сайта">навигации сайта с подписями
+                    title</a>
+            </li>
+            <li>
+                <!-- 9 -->
+                <a title="ссылка без href"> ссылка без href </a>
+            </li>
+            <li>
+                <!-- 10 -->
+                <a href="" title="ссылка с пустым href"> ссылка с пустым href </a>
+            </li>
+            <li>
+                <!-- 11 -->
+                <a href="http://127.0.0.1:5500/index.html" rel="nofollow"> ссылка, по которой запрещен переход
+                    поисковикам </a>
+            </li>
+            <li>
+                <!-- 12 -->
+                <a href="http://127.0.0.1:5500/index.html" rel="nofollow">
+                    <noindex> запрещенная ссылка для индексации поисковиками </noindex>
+                </a>
+            </li>
+            <li>
+                <!-- 13 -->
+                <p>text <a href="http://127.0.0.1:5500/index.html">контекстная ссылка</a> text</p>
+            </li>
+            <li>
+                <!-- 14 -->
+                <a href="http://127.0.0.1:5500/index.html">
+                    <img src="img/flower.jpg" width="300" height="200" alt="flower">
+                </a>
+            </li>
+            <li>
+                <!-- 15 -->
+                <img src="img/circle.jpg" width="400" height="300" usemap="#circle">
+                <map name="circle">
+                    <area shape="circle" coords="200,150,150" href="#circle">
+                </map>
+                <img src="img/rectangle.jpg" width="400" height="300" usemap="#rect">
+                <map name="rect">
+                    <area shape="rect" coords="75,65,320,230" href="#rect">
+                </map>
+            </li>
+            <li>
+                <!-- 16 -->
+                <a href="index.html">относительная на страницу в текущем каталоге</a>
+            </li>
+            <li>
+                <!-- 17 -->
+                <a href="about">относительная на страницу в каталоге about</a>
+            </li>
+            <li>
+                <!-- 18 -->
+                <a href="../">относительная на страницу в каталоге уровнем выше текущего</a>
+            </li>
+            <li>
+                <!-- 19 -->
+                <a href="../../"> относительная на страницу в каталоге двумя уровнями выше</a>
+            </li>
+            <li>
+                <!-- 20 -->
+                <a href="/index.html">сокращенная на главную</a>
+            </li>
+            <li>
+                <!-- 21 -->
+                <a href="/news"> сокращенная ссылку на внутреннюю</a>
+            </li>
+        </ol>
+
+
+
+    </div>
+
+    <div>
+        <!-- form-->
+        <h2> Форма </h2>
+        <form action="/" method="POST">
+
+            <p>
+                <label>
+                    Ваше имя:<br>
+                    <input type="text" name="field-first-name" placeholder="Введите ваше имя">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Ваш email:<br>
+                    <input type="email" name="field-email" placeholder="example@example.com">
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    Ваша дата рождения:<br>
+                    <input type="date" name="field-date" placeholder="xx.xx.xxxx">
+                </label>
+            </p>
+
+            <p>
+                Выберите свой пол:<br>
+                <label><input type="radio" name="gender" value="male">
+                    Муж</label>
+                <label><input type="radio" name="gender" value="female">
+                    Жен</label>
+            </p>
+
+            <p>
+                Выберите количество конечностей:<br>
+                <label><input type="radio" name="limb" value="counter-1">
+                    1</label>
+                <label><input type="radio" name="limb" value="counter-2">
+                    2</label>
+                <label><input type="radio" name="limb" value="counter-3">
+                    3</label>
+                <label><input type="radio" name="limb" value="counter-4">
+                    4</label>
+                <label><input type="radio" name="limb" value="counter-5">
+                    5</label>
+            </p>
+
+            <p>
+                <label>
+                    Выберите свою сверхспособность:<br>
+                    <select name="field-superpower[]" multiple="multiple">
+                        <option value="superpower-1">Бессмертие</option>
+                        <option value="superpower-2">Прохождение сквозь стены</option>
+                        <option value="superpower-3">Левитация</option>
+                    </select>
+                </label><br>
+                <label>
+            </p>
+
+            <p id="#Biography">
+                Биография:<br>
+                <textarea name="comments" rows="5" cols="30" placeholder="Расскажите о себе"></textarea><br>
+                </label>
+            </p>
+
+            <label><input type="checkbox" name="check-1">C контрактом ознакомлен(а)</label><br>
+
+            <p><input type="submit" value="Отправить"></p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
